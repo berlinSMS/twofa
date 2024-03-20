@@ -18,14 +18,7 @@ Also, provide the SiteKey and SecretKey for your captcha provider if you want to
 To implement verification in the registration process, you need an additional field for the phone number in your registration form. Add the js module "twofa-optin.js" before the submit button and include the SiteKey parameter you received in step 1.
 
 <div class="tabs">
-<details open><summary>.jsx</summary>
-
-``` { .jsx }
-    <script src="https://static.berlinsms.de/twofa/twofa-optin.js?bsmsSitekey={TWOFA_SITE_KEY}&onSolved={onSolvedCallback}"></script>
-```
-
-</details>
-<details><summary>.php</summary>
+<details open><summary>.php</summary>
 
 ``` { .php }
     <script src="https://static.berlinsms.de/twofa/twofa-optin.js?bsmsSitekey=<?php echo TWOFA_SITE_KEY; ?>&onSolved=onSolvedCallback"></script>

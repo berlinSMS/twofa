@@ -386,4 +386,4 @@ Fällt die Überprüfung erfolgreich aus, erhalten Sie im Response einen Json mit d
 </details>
 </div>
 
-Sie können den Benutzer nun einloggen. Den vollständigen Code dieses Tutorials finden Sie [hier](https://static.berlinsms.de/twofa/twofa_without_modules.zip) zum Download.
+Sie können den Benutzer nun einloggen. Den vollständigen Code dieses Tutorials finden Sie [hier](https://github.com/berlinSMS/twofa/tree/main/examples_without_modules) zum Download.

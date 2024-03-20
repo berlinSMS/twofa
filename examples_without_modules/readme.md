@@ -384,4 +384,4 @@ If the verification is successful, you will receive a JSON in the response with 
 </details>
 </div>
 
-Now you can log in the user. You can find the complete code of this tutorial for download [here](https://static.berlinsms.de/twofa/twofa_without_modules.zip).
+Now you can log in the user. You can find the complete code of this tutorial for download [here](https://github.com/berlinSMS/twofa/tree/main/examples_without_modules).

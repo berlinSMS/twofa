@@ -47,7 +47,7 @@ When the user clicks the registration button, the form is submitted, and the use
 
 ## 3) Verification in the Backend
 
-After submitting the form, the backend receives the challenge token. Since data in the frontend can be manipulated, it is strongly recommended to validate the challenge token on the server side. Use the "Twofa" module, which you can download [here](https://static.berlinsms.de/twofa/twofa.zip). Save the module in your web space and import it into your backend code.
+After submitting the form, the backend receives the challenge token. Since data in the frontend can be manipulated, it is strongly recommended to validate the challenge token on the server side. Use the "Twofa" module, which you can download [here](https://github.com/berlinSMS/twofa/blob/main/twofa.php). Save the module in your web space and import it into your backend code.
 
 <div class="tabs">
 <details open><summary>.php</summary>
@@ -109,7 +109,7 @@ Now you can create the user and link the phone number. Remember to only use the 
 
 To implement phone number authentication in the login process, add another security check after verifying the username and password: Retrieve the user's phone number, for example, from your database. Then, send a code via SMS to this number.
 
-Again, use the "Twofa" module. If not done yet, you can download it [here](https://static.berlinsms.de/twofa/twofa.zip). Save the module in your web space, import it into your backend code, and create an instance of the "Twofa" class, passing the SiteKey and SecretKey to the constructor.
+Again, use the "Twofa" module. If not done yet, you can download it [here](https://github.com/berlinSMS/twofa/blob/main/twofa.php). Save the module in your web space, import it into your backend code, and create an instance of the "Twofa" class, passing the SiteKey and SecretKey to the constructor.
 
 <div class="tabs">
 <details open><summary>.php</summary>
@@ -188,4 +188,4 @@ The returned object contains the verified phone number and the "solved" paramete
 
 You can now log in the user.
 
-You can find the complete code of this tutorial for download [here](https://static.berlinsms.de/twofa/twofa_with_modules.zip)
+You can find the complete code of this tutorial for download [here](https://github.com/berlinSMS/twofa/tree/main/examples)

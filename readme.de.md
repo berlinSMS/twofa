@@ -47,7 +47,7 @@ Wenn der Benutzer nun auf den Registrierungsbutton klickt, wird das Formular abg
 
 ## 3) Überprüfung im Backend
 
-Nach Abschicken des Formulars erhält das Backend den Challenge-Token. Da sich Daten im Frontend manipulieren lassen, empfehlen wir dringend den Challenge-Token auf Serverseite zu überprüfen. Verwenden Sie dazu das Modul "Twofa", welches Sie [hier](https://static.berlinsms.de/twofa/twofa.zip)  herunterladen können. Speichern Sie das Modul in Ihrem Webspace und importieren Sie es in Ihren Code im Backend.
+Nach Abschicken des Formulars erhält das Backend den Challenge-Token. Da sich Daten im Frontend manipulieren lassen, empfehlen wir dringend den Challenge-Token auf Serverseite zu überprüfen. Verwenden Sie dazu das Modul "Twofa", welches Sie [hier](https://github.com/berlinSMS/twofa/blob/main/twofa.php)  herunterladen können. Speichern Sie das Modul in Ihrem Webspace und importieren Sie es in Ihren Code im Backend.
 
 <div class="tabs">
 <details open><summary>.php</summary>
@@ -109,7 +109,7 @@ Sie können nun den Benutzer anlegen und die Telefonnummer verknüpfen. Bitte denk
 
 Um die Authentifizierung einer Telefonnummer im Loginprozess umzusetzen, fügen Sie nach der Überprüfung von Benutzername und Passwort eine weitere Sicherheitsabfrage hinzu: Ermitteln Sie zunächst die Telefonnummer des Benutzers, zum Beispiel aus Ihrer Datenbank. Versenden Sie anschließend einen Code per SMS an diese Nummer.
 
-Verwenden Sie dazu wieder das Modul "Twofa". Falls noch nicht geschehen, können Sie es [hier](https://static.berlinsms.de/twofa/twofa.zip) herunterladen. Speichern Sie das Modul in Ihren Webspace, importieren Sie es in Ihren Code im Backend und erzeugen Sie eine Instanz der Klasse "Twofa". Dabei übergeben Sie den Sitekey und den SecretKey an den Konstruktor.
+Verwenden Sie dazu wieder das Modul "Twofa". Falls noch nicht geschehen, können Sie es [hier](https://github.com/berlinSMS/twofa/blob/main/twofa.php) herunterladen. Speichern Sie das Modul in Ihren Webspace, importieren Sie es in Ihren Code im Backend und erzeugen Sie eine Instanz der Klasse "Twofa". Dabei übergeben Sie den Sitekey und den SecretKey an den Konstruktor.
 
 <div class="tabs">
 <details open><summary>.php</summary>
@@ -188,4 +188,4 @@ Das zurückgegebene Objekt enthält die verifizierte Telefonnummer und den Paramet
 
 Sie k&ouml;nnen nun den Benutzer einloggen.
 
-Sie finden den vollst&auml;ndigen Code dieses Tutorials zum Download [hier](https://static.berlinsms.de/twofa/twofa_with_modules.zip)
+Sie finden den vollst&auml;ndigen Code dieses Tutorials zum Download [hier](https://github.com/berlinSMS/twofa/tree/main/examples)

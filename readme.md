@@ -53,7 +53,7 @@ After submitting the form, the backend receives the challenge token. Since data 
 <details open><summary>.php</summary>
 
 ``` { .php }
-	include '../twofa.php';
+	include 'twofa.php';
 ```
 
 </details>
